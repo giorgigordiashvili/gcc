@@ -140,11 +140,17 @@ nav {
     }
 
     li {
-      padding-right: 20px;
       list-style-type: none;
     }
     a {
+      transition: all 0.2s;
+      padding: 0 10px;
+      font-size: 16px;
       color: #000;
+      &:hover {
+        background-color: #f4f4f4;
+        padding: 3vh 10px;
+      }
       text-decoration: none;
     }
   }
