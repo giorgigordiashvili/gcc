@@ -1,0 +1,332 @@
+.content {
+  &.content-active {
+    position: relative;
+    opacity: 0.1;
+  }
+}
+
+.about-us {
+  background-color: #f4f4f4;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @media (max-width: 768px) {
+    background-color: #fff;
+    height: auto;
+  }
+
+  .line {
+    top: 30%;
+  }
+  h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    padding: 0 10vw;
+    font-family: NotoSans-Bold;
+
+    position: relative;
+
+    @media (max-width: 768px) {
+      font-size: 20.5px;
+      position: relative;
+      top: 0;
+      padding-left: 10vw;
+    }
+  }
+  img {
+    position: absolute;
+    right: 0;
+    height: 85%;
+    width: 50%;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      height: 50%;
+      width: 100%;
+    }
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    width: 50%;
+    @media (max-width: 768px) {
+      padding-top: 25px;
+      justify-content: start;
+      width: 100%;
+    }
+
+    p {
+      padding: 0 10vw;
+      font-size: 18px;
+      font-family: NotoSans-Light;
+    }
+    a {
+      position: absolute;
+      bottom: 0;
+      padding: 0;
+      text-decoration: none;
+      padding: 47px 130px;
+      background-color: white;
+      right: 0;
+      transition: all 0.5s;
+      &:hover {
+        background-color: #000;
+        color: white;
+      }
+      i {
+        padding-left: 20px;
+      }
+      @media (max-width: 768px) {
+        position: relative;
+        text-align: right;
+        padding: 25px 9vw 25px 0;
+      }
+    }
+
+    p {
+      position: relative;
+      top: 38px;
+      @media (max-width: 768px) {
+        top: 0;
+      }
+    }
+  }
+}
+
+.line {
+  position: relative;
+  left: 10vw;
+  width: 33px;
+  height: 15px;
+  background: #e2d3b4;
+  @media (max-width: 768px) {
+    width: 30px;
+    height: 20px;
+    top: 0;
+    margin-bottom: 12px;
+  }
+}
+.mission {
+  .hide {
+    display: none;
+  }
+
+  background-color: #fff;
+  position: relative;
+  height: 100vh;
+  display: flex;
+
+  justify-content: flex-end;
+  @media (max-width: 768px) {
+    .hide {
+      display: block;
+    }
+    height: auto;
+
+    flex-direction: column;
+  }
+  h1 {
+    position: absolute;
+    font-size: 50px;
+    padding: 0 10vw;
+
+    font-family: NotoSans-Bold;
+
+    position: relative;
+
+    @media (max-width: 768px) {
+      font-size: 20.5px;
+      position: relative;
+      top: 0;
+      padding-left: 10vw;
+    }
+  }
+  img {
+    position: relative;
+    top: 15vh;
+    object-fit: cover;
+    height: 85%;
+    width: 50%;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+
+      height: 50%;
+      width: 100%;
+    }
+  }
+
+  .mission-text {
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    width: 50%;
+    @media (max-width: 768px) {
+      position: relative;
+      width: 100%;
+      justify-content: start;
+    }
+
+    h1,
+    .line {
+      @media (max-width: 768px) {
+        font-size: 20.5px;
+        display: none;
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 0;
+      padding: 0;
+      text-decoration: none;
+      padding: 47px 130px;
+      background-color: #f4f4f4;
+      left: 0;
+      transition: all 0.5s;
+      &:hover {
+        background-color: #000;
+        color: white;
+      }
+      i {
+        padding-left: 20px;
+      }
+      @media (max-width: 768px) {
+        position: relative;
+        text-align: right;
+        padding: 25px 9vw 25px 0;
+        background-color: #fff;
+      }
+    }
+
+    p {
+      padding: 0 10vw;
+      font-family: NotoSans-Light;
+      position: relative;
+      top: 38px;
+      font-size: 18px;
+      @media (max-width: 768px) {
+        padding-top: 25px;
+        top: 0;
+      }
+    }
+  }
+}
+
+.strategy {
+  background-color: #f4f4f4;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @media (max-width: 768px) {
+    background-color: #fff;
+    height: auto;
+  }
+  h1 {
+    position: absolute;
+    top: 30%;
+    padding: 0 10vw;
+    font-family: NotoSans-Bold;
+    font-size: 50px;
+    position: relative;
+
+    @media (max-width: 768px) {
+      font-size: 20.5px;
+      position: relative;
+      top: 0;
+      padding-left: 10vw;
+    }
+  }
+  .line {
+    top: 30%;
+    @media (max-width: 768px) {
+      top: 0;
+    }
+  }
+  .first {
+    position: absolute;
+    right: 0;
+    height: 45%;
+    width: 24%;
+    top: 15vh;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .second {
+    position: absolute;
+    width: 27vw;
+    top: 22vh;
+    height: 49.6%;
+    right: 27vw;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      height: 50%;
+      width: 100%;
+      right: 0;
+    }
+  }
+
+  .strategy-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    width: 50%;
+    @media (max-width: 768px) {
+      padding-top: 25px;
+      justify-content: start;
+      width: 100%;
+    }
+    p {
+      font-size: 18px;
+      padding: 0 10vw;
+      font-family: NotoSans-Light;
+      position: relative;
+      top: 38px;
+      @media (max-width: 768px) {
+        top: 0;
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 0;
+      padding: 0;
+      text-decoration: none;
+      padding: 47px 130px;
+      background-color: white;
+      left: 10vw;
+      transition: all 0.5s;
+      &:hover {
+        background-color: #000;
+        color: white;
+      }
+      i {
+        padding-left: 20px;
+      }
+      @media (max-width: 768px) {
+        position: relative;
+        text-align: right;
+        padding: 25px 9vw 25px 0;
+        left: 0;
+      }
+    }
+  }
+}

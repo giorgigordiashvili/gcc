@@ -1,0 +1,29 @@
+@import "_style.scss";
+@import "../node_modules/font-awesome-4.7.0/scss/font-awesome.scss";
+* {
+  font-family: NotoSans-Light;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  display: flex;
+
+  width: 79.6vw;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 81.4vw;
+  }
+}
+@import "_fonts.scss";
