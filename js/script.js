@@ -25,3 +25,19 @@ var swiper = new Swiper(".swiper-container", {
     },
   },
 });
+
+var slider = new Swiper(".home-slider-container", {
+  direction: document.body.clientWidth < 768 ? "horizontal" : "vertical",
+
+  loop: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

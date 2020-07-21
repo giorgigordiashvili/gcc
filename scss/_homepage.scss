@@ -16,6 +16,7 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   @media (max-width: 768px) {
+    padding-top: 45px;
     background-color: #fff;
     height: auto;
   }
@@ -327,6 +328,7 @@ a {
       @media (max-width: 768px) {
         position: relative;
         text-align: right;
+        background-color: white;
         padding: 25px 9vw 25px 0;
         left: 0;
       }
@@ -334,103 +336,147 @@ a {
   }
 }
 
-.news {
-  hr {
-    background-color: #171717;
+.home-slider-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .slide1 {
+    background-image: url("../res/bitmap.png");
+  }
+  .slide2 {
+    background-image: url("../res/bitmap.png");
+  }
+  .slide3 {
+    background-image: url("../res/bitmap.png");
+  }
+  .swiper-pagination-bullet {
+    color: white;
+    background-color: white;
+    border: 1px solid #fff;
+    padding: 5px;
+  }
+}
+
+.gallery {
+  padding-top: 15vh;
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
+  background-color: #fff;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    background-color: #fff;
+    height: auto;
   }
   h1 {
-    font-size: 50px;
     @media (max-width: 768px) {
       font-size: 20.5px;
     }
-  }
-  .slider-next,
-  .slider-prev {
-    height: 22px;
-    object-fit: contain;
-
-    padding: 0 35px;
-  }
-
-  .nav {
-    display: none;
-    @media (max-width: 768px) {
-      display: flex;
-    }
-  }
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding-top: 150px;
-  .slider {
-    display: flex;
-    padding: 10vh 0;
-    .news-item {
-      border: 1px solid #e5e5e5;
-      border-top: none;
-      border-bottom: none;
-      height: auto;
-      h2 {
-        padding: 11.8% 0 0 12.2%;
-      }
-      .date {
-        padding: 8% 0 0 12.2%;
-      }
-      .description {
-        width: 75.6%;
-        padding: 13% 0 0 12.2%;
-        text-align: justify;
-      }
-      .foot {
-        display: flex;
-        padding: 16% 12.2% 12% 12.2%;
-        justify-content: space-between;
-      }
-      width: 20vw;
-      &:hover {
-        background-color: #f4f4f4;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .line {
     position: relative;
-    left: 0;
-    width: 33px;
-    height: 15px;
-    background: #e2d3b4;
-    @media (max-width: 768px) {
-      width: 30px;
-      height: 20px;
-
-      top: 0;
-      margin: 12px 0;
-    }
-  }
-  .heading {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    a {
-      @media (max-width: 768px) {
-        display: none;
-      }
-      i {
-        padding-left: 20px;
-      }
-      padding: 47px 130px;
-      background-color: #f4f4f4;
-      &:hover {
-        color: white;
-        background-color: black;
-      }
-    }
-  }
-  .h1 {
+    padding: 0 10vw;
+    font-family: NotoSans-Bold;
     font-size: 50px;
+  }
+
+  .first {
+    position: relative;
+    height: 57vh;
+    width: 32vw;
+    left: 10vw;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      left: 0;
+      width: 56vw;
+      height: 46%;
+    }
+  }
+  .second {
+    position: absolute;
+    width: 18vw;
+    top: 15vh;
+    height: 32vh;
+    bottom: 66%;
+    left: 44%;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      left: 61.5vw;
+      width: 39.5vw;
+      top: 60px;
+      height: 39vw;
+    }
+  }
+  .third {
+    position: absolute;
+    left: 44%;
+    top: 50vh;
+    bottom: 32%;
+    width: 18vw;
+    height: 32vh;
+    @media (max-width: 768px) {
+      width: 39.5vw;
+      left: 61.5vw;
+      top: 30vh;
+      height: 39vw;
+    }
+  }
+  .forth {
+    position: absolute;
+    right: 7vw;
+    top: 5vh;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  a {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    text-decoration: none;
+    padding: 47px 130px;
+    background-color: #f4f4f4;
+    color: #000;
+    right: 7vw;
+    transition: all 0.5s;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    i {
+      padding-left: 20px;
+    }
+    @media (max-width: 768px) {
+      position: relative;
+      padding: 40px 0;
+      margin: 0;
+      left: 18vw;
+      background-color: #fff;
+    }
+  }
+  .gallery-text {
+    @media (max-width: 768px) {
+      display: none;
+    }
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    position: relative;
+    width: 50%;
+
+    p {
+      font-size: 18px;
+      padding: 0 10vw;
+      font-family: NotoSans-Light;
+      position: relative;
+    }
   }
 }

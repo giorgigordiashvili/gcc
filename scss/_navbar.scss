@@ -1,3 +1,10 @@
+header {
+  @media (max-width: 768px) {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+  }
+}
 .logo {
   h4 {
     font-family: NotoSans-Bold;
