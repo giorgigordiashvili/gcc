@@ -1,0 +1,37 @@
+.partner-f {
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+      width: 81.4vw;
+    }
+    h3 {
+      font-size: 30px;
+      padding: 60px 0;
+      @media (max-width: 768px) {
+        font-size: 25px;
+        padding: 30px 0;
+      }
+    }
+    img {
+      position: absolute;
+      right: 10vw;
+      top: 50%;
+      margin: auto;
+      @media (max-width: 768px) {
+        position: relative;
+        padding: 10vw;
+        object-fit: contain;
+      }
+    }
+    p {
+      width: 40vw;
+      padding-bottom: 30px;
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
