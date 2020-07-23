@@ -49,3 +49,24 @@ var slider = new Swiper(".home-slider-container", {
     clickable: true,
   },
 });
+
+var swiper = new Swiper(".team-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // init: false,
+
+  navigation: {
+    nextEl: ".team-button-next",
+    prevEl: ".team-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
