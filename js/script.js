@@ -6,6 +6,14 @@ burger.addEventListener("click", () => {
   nav.classList.toggle("nav-active");
   content.classList.toggle("content-active");
 });
+
+const navSearch = document.querySelector(".search-button");
+const navInput = document.querySelector(".search-input");
+
+navSearch.addEventListener("click", () => {
+  navInput.classList.toggle("search-active");
+});
+
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   spaceBetween: 10,
