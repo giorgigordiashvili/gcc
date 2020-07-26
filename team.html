@@ -31,14 +31,14 @@
             <div class="logo"><h4>GCC</h4></div>
             <ul class="nav-links">
               <li class="left"><a href="#">Home</a></li>
-              <div class="left about">
-                <button>
+              <div class="left about dropdown">
+                <button class="dropbtn" onclick="dropdown()">
                   About Us<i class="fa fa-angle-down" aria-hidden="true"></i>
                 </button>
-                <ul>
-                  <li>Company</li>
-                  <li>Partner</li>
-                  <li>Team</li>
+                <ul id="myDropdown" class="dropdown-content">
+                  <li><a>Company</a></li>
+                  <li><a>Partner</a></li>
+                  <li><a>Team</a></li>
                 </ul>
               </div>
 
@@ -86,22 +86,219 @@
         </div>
       </nav>
     </header>
-    <div class="content">
+    <div class="team-content">
       <div class="banner-black">
-        <h2>Meet The Team</h2>
-        <div class="slider-arrows">
-          <i class="fa fa-chevron-left team-button-prev" aria-hidden="true"></i>
-          <hr />
-          <i
-            class="fa fa-chevron-right team-button-next"
-            aria-hidden="true"
-          ></i>
+        <div class="container">
+          <h2>Meet The <span class="colored">Team</span></h2>
+          <div class="line"></div>
+          <div class="slider-arrows">
+            <i
+              class="fa fa-chevron-left team-button-prev"
+              aria-hidden="true"
+            ></i>
+
+            <i
+              class="fa fa-chevron-right team-button-next"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="team-members cards container team-swiper-container">
+        <div id="myModal1" class="modal">
+          <div class="blocker" onclick="closeModal(1)"></div>
+          <div class="modal-content">
+            <div class="text">
+              <img src="/res/team.jpg" />
+              <h3>David Sakvarelidze1</h3>
+              <p class="position">General Director</p>
+              <i
+                onclick="closeModal(1)"
+                class="fa fa-times close"
+                aria-hidden="true"
+              ></i>
+
+              <p class="desc">
+                Prior to being appointed DirectorGeneral of the Georgian…
+                Construction Consortium… (2012-2013) he served as a Subway
+                Franchise Manager Consultant. His responsibilities included
+                preparing a business plan, obtaining a Subway license, finding
+                financial sources, organizing marketing campaigns. Prior to
+                2011, David worked in the United States as a stock market
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="myModal2" class="modal">
+          <div class="blocker" onclick="closeModal(2)"></div>
+          <div class="modal-content">
+            <div class="text">
+              <img src="/res/team.jpg" />
+              <h3>David Sakvarelidze2</h3>
+              <p class="position">General Director</p>
+              <i
+                onclick="closeModal(2)"
+                class="fa fa-times close"
+                aria-hidden="true"
+              ></i>
+
+              <p class="desc">
+                Prior to being appointed DirectorGeneral of the Georgian…
+                Construction Consortium… (2012-2013) he served as a Subway
+                Franchise Manager Consultant. His responsibilities included
+                preparing a business plan, obtaining a Subway license, finding
+                financial sources, organizing marketing campaigns. Prior to
+                2011, David worked in the United States as a stock market
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="myModal3" class="modal">
+          <div class="blocker" onclick="closeModal(3)"></div>
+          <div class="modal-content">
+            <div class="text">
+              <img src="/res/team.jpg" />
+              <h3>David Sakvarelidze3</h3>
+              <p class="position">General Director</p>
+              <i
+                onclick="closeModal(3)"
+                class="fa fa-times close"
+                aria-hidden="true"
+              ></i>
+
+              <p class="desc">
+                Prior to being appointed DirectorGeneral of the Georgian…
+                Construction Consortium… (2012-2013) he served as a Subway
+                Franchise Manager Consultant. His responsibilities included
+                preparing a business plan, obtaining a Subway license, finding
+                financial sources, organizing marketing campaigns. Prior to
+                2011, David worked in the United States as a stock market
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="myModal4" class="modal">
+          <div class="blocker" onclick="closeModal(4)"></div>
+          <div class="modal-content">
+            <div class="text">
+              <img src="/res/team.jpg" />
+              <h3>David Sakvarelidze4</h3>
+              <p class="position">General Director</p>
+              <i
+                onclick="closeModal(4)"
+                class="fa fa-times close"
+                aria-hidden="true"
+              ></i>
+
+              <p class="desc">
+                Prior to being appointed DirectorGeneral of the Georgian…
+                Construction Consortium… (2012-2013) he served as a Subway
+                Franchise Manager Consultant. His responsibilities included
+                preparing a business plan, obtaining a Subway license, finding
+                financial sources, organizing marketing campaigns. Prior to
+                2011, David worked in the United States as a stock market
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card" id="first">
+            <img src="/res/team.jpg" alt="Team member picture" />
+            <h3>David Sakvarelidze#1</h3>
+            <p class="position">General Director</p>
+            <p class="desc">
+              Prior to being appointed DirectorGeneral of the Georgian…
+              Construction Consortium… (2012-2013) he served as a Subway
+              Franchise Manager Consultant. His responsibilities included
+              preparing a business plan, obtaining a Subway license, finding
+              financial sources, organizing marketing campaigns. Prior to 2011,
+              David worked in the United States as a stock market promoter at
+              Star Alliance Capital (Wall Street, New York). He received his
+              Business Management degree from Dominican College, New York, USA.
+              He has passed professional courses in: Management Accounting,
+              Microeconomics, Corporate Finance, Management, Business Policy,
+              International Finance, Business Law.
+            </p>
+            <button onclick="openModal(1)">
+              See More
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="swiper-slide card">
+            <img src="/res/team.jpg" alt="Team member picture" />
+            <h3>David Sakvarelidze#2</h3>
+            <p class="position">General Director</p>
+            <p class="desc">
+              Prior to being appointed DirectorGeneral of the Georgian…
+              Construction Consortium… (2012-2013) he served as a Subway
+              Franchise Manager Consultant. His responsibilities included
+              preparing a business plan, obtaining a Subway license, finding
+              financial sources, organizing marketing campaigns. Prior to 2011,
+              David worked in the United States as a stock market promoter at
+              Star Alliance Capital (Wall Street, New York). He received his
+              Business Management degree from Dominican College, New York, USA.
+              He has passed professional courses in: Management Accounting,
+              Microeconomics, Corporate Finance, Management, Business Policy,
+              International Finance, Business Law.
+            </p>
+            <button onclick="openModal(2)">
+              See More
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="swiper-slide card">
+            <img src="/res/team.jpg" alt="Team member picture" />
+            <h3>David Sakvarelidze#3</h3>
+            <p class="position">General Director</p>
+            <p class="desc">
+              Prior to being appointed DirectorGeneral of the Georgian…
+              Construction Consortium… (2012-2013) he served as a Subway
+              Franchise Manager Consultant. His responsibilities included
+              preparing a business plan, obtaining a Subway license, finding
+              financial sources, organizing marketing campaigns. Prior to 2011,
+              David worked in the United States as a stock market promoter at
+              Star Alliance Capital (Wall Street, New York). He received his
+              Business Management degree from Dominican College, New York, USA.
+              He has passed professional courses in: Management Accounting,
+              Microeconomics, Corporate Finance, Management, Business Policy,
+              International Finance, Business Law.
+            </p>
+            <button onclick="openModal(3)">
+              See More
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="swiper-slide card">
+            <img src="/res/team.jpg" alt="Team member picture" />
+
+            <h3>David Sakvarelidze#4</h3>
+            <p class="position">General Director</p>
+            <p class="desc">
+              Prior to being appointed DirectorGeneral of the Georgian…
+              Construction Consortium… (2012-2013) he served as a Subway
+              Franchise Manager Consultant. His responsibilities included
+              preparing a business plan, obtaining a Subway license, finding
+              financial sources, organizing marketing campaigns. Prior to 2011,
+              David worked in the United States as a stock market promoter at
+              Star Alliance Capital (Wall Street, New York). He received his
+              Business Management degree from Dominican College, New York, USA.
+              He has passed professional courses in: Management Accounting,
+              Microeconomics, Corporate Finance, Management, Business Policy,
+              International Finance, Business Law.
+            </p>
+
+            <button onclick="openModal(4)">
+              See More
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="social-footer">
         <div class="container">
           <h3>GCC</h3>
+
           <div>
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <i class="fa fa-linkedin" aria-hidden="true"></i>

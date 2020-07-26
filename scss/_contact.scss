@@ -108,6 +108,9 @@
       }
       i {
         padding-right: 30px;
+        @media (max-width: 1024px) {
+          padding-right: 0;
+        }
       }
       p {
         padding-bottom: 60px;

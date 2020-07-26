@@ -246,7 +246,9 @@ a {
     font-family: NotoSans-Bold;
     font-size: 50px;
     position: relative;
-
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
     @media (max-width: 768px) {
       font-size: 20.5px;
       position: relative;

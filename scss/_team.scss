@@ -1,32 +1,197 @@
-.banner-black {
-  @media (max-width: 768px) {
-    height: 34vh;
-    background-color: #171717;
-    display: flex;
-    color: #fff;
-    justify-content: space-between;
+.team-content {
+  width: 100vw;
+  position: relative;
+  background-color: #f4f4f4;
 
-    padding: 0 10vw;
-  }
+  .team-members {
+    position: relative;
 
-  h2 {
-    @media (max-width: 768px) {
-      padding-top: 50px;
-    }
-  }
-  .slider-arrows {
-    @media (max-width: 768px) {
-      padding-top: 70px;
-      display: flex;
-    }
-    i {
-      @media (max-width: 768px) {
-        padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 1rem;
+    top: -20vh;
+
+    .card {
+      padding: 10px;
+      background-color: #fff;
+      h3 {
+        padding-top: 20px;
+      }
+      img {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+      }
+      p {
+        padding: 10px 0;
+      }
+      .position {
+        color: #7f7f7f;
+      }
+      .desc {
+        line-height: 2em;
+        height: 5em;
+        overflow: hidden;
+      }
+      button {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+        padding: 5px;
+        i {
+          padding-left: 5px;
+        }
+        &:hover {
+          background-color: #171717;
+          color: #fff;
+        }
       }
     }
-    hr {
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 100px;
+      left: 0;
       @media (max-width: 768px) {
-        height: 20px;
+        padding: 0;
+      }
+      top: 0;
+      width: 100%;
+      height: 100%;
+      .blocker {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        content: " ";
+        background: rgba(18, 18, 18, 0.91);
+      }
+
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        .text {
+          width: 90%;
+
+          padding: 5% 0;
+          margin: auto;
+        }
+        width: 40%;
+        @media (max-width: 768px) {
+          width: 100%;
+          height: 100%;
+          padding-top: 10%;
+        }
+        .close {
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          @media (max-width: 768px) {
+            top: 2%;
+            right: 5%;
+          }
+          font-size: 40px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        h3 {
+          padding-top: 5%;
+        }
+        .position {
+          padding-top: 5%;
+          color: #7f7f7f;
+        }
+        img {
+          border: 1px solid #e7e7e7;
+          width: 200px;
+          max-width: 100vw;
+          @media (max-width: 768px) {
+            width: 90vw;
+          }
+        }
+        .desc {
+          padding-top: 5%;
+
+          overflow-y: scroll;
+          max-height: 30ch;
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          /* Track */
+          &::-webkit-scrollbar-track {
+            background: #dbdbdb;
+          }
+
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            border-radius: 2px;
+            background: #5e5e5e;
+          }
+
+          /* Handle on hover */
+          &::-webkit-scrollbar-thumb:hover {
+            background: #171717;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-black {
+    background-color: #171717;
+    padding-top: 5vh;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        .line {
+          display: none;
+        }
+      }
+      .line {
+        left: 0;
+      }
+      .colored {
+        color: #daccb0;
+      }
+      h2 {
+        font-size: 50px;
+        color: #fff;
+        width: 8ch;
+      }
+      .slider-arrows {
+        display: none;
+        @media (max-width: 768px) {
+          display: flex;
+          padding-top: 5vh;
+          height: 7vh;
+        }
+
+        .team-button-prev {
+          border-right: 1px solid #fff;
+        }
+        i {
+          padding: 0 20px;
+          color: #fff;
+        }
       }
     }
   }
