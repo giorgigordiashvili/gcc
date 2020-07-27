@@ -85,11 +85,12 @@ nav {
     }
     display: flex;
     .container {
+      width: 80.6vw;
       justify-content: space-between;
       text-align: center;
       align-items: center;
       a {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 300;
         color: white;
         text-decoration: none;
@@ -225,6 +226,9 @@ nav {
     text-align: center;
     padding: 2rem 0;
     border-top: 1px solid black;
+  }
+  i {
+    padding-left: 10px;
   }
 }
 

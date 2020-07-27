@@ -35,7 +35,7 @@
       margin: 0;
     }
 
-    .form {
+    .contact-form {
       background-color: #fff;
       margin-left: 20px;
       border-radius: 1%;
@@ -48,7 +48,7 @@
       }
       input {
         padding: 20px;
-
+        outline: none;
         border: none;
         border-bottom: 1px solid #f4f4f4;
         &::placeholder {
@@ -56,16 +56,22 @@
         }
       }
       #button {
+        transition: all 0.5s ease;
         background-color: #fff;
-        padding-top: 90px;
+        margin-top: 90px;
         border: none;
         float: right;
         cursor: pointer;
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
       }
       #name,
       #surname,
       #phone,
       #email {
+        outline: none;
         width: 40%;
         @media (max-width: 768px) {
           width: 100%;
