@@ -1910,6 +1910,11 @@ footer .column ul li a {
   overflow: hidden;
 }
 
+.news-wrapper .cards .card:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 .news-wrapper .cards .card .news-text {
   width: 90%;
   padding: 20px 0 100px 0;

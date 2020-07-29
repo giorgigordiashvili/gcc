@@ -56,6 +56,10 @@
 
     grid-gap: 1rem;
     .card {
+      &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
       .news-text {
         @media (max-width: 768px) {
           margin: auto;
